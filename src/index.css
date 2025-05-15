@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.bgprimary{
+    @apply bg-blue-400 text-black p-4
+}
