@@ -1,0 +1,42 @@
+.navbar {
+    position: fixed !important;
+    top: 0;
+    padding: 0px;
+    font-size: 13px;
+    z-index: 1000;
+}
+.navbar .nav-active{
+    color: blue !important;
+    font-weight: 600;
+}
+
+.sectionCard{
+    margin: 1rem !important;
+    background: black;
+    border-radius: 1rem;
+    font-size: 13px;
+    padding: 0.5rem;
+    color: white;
+
+}
+.sectionCard .animationCard{
+    height: 35vh !important;
+}
+.introductioncontainer{
+    margin-top: 3.5rem !important;
+    background-color: lightgray;
+    padding: 0.5rem 1.5rem;
+    
+
+
+    
+}
+.introductioncontainer .greetsection{
+    font-size: 13px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
