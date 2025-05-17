@@ -90,17 +90,28 @@ section {
 }
 
 /* Skills Cards */
+
+#skills{
+  background: #e2e2e2;
+  padding: 3rem;
+}
 .skill-card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.3s;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background: #566989;
+    border: 2px solid #405a50;
+    cursor: pointer;
+    color: white !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px in
 }
 
 .skill-card:hover {
   transform: scale(1.05);
+  /* color: black !important; */
+  /* background-color: white !important; */
 }
 
 /* Experience Cards */
