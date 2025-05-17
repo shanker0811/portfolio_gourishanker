@@ -5,6 +5,10 @@
   --gray-blue: #778da9;
   --light: #e0e1dd;
 }
+.row{
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 body {
   font-family: 'Segoe UI', sans-serif;
@@ -94,7 +98,9 @@ section {
 #skills{
   background: #e2e2e2;
   padding: 3rem;
+
 }
+
 .skill-card {
   background: #566989;
     border: 2px solid #405a50;
@@ -102,9 +108,10 @@ section {
     color: white !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     border-radius: 1rem;
     text-align: center;
+    position: relative;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px in
 }
 
@@ -112,6 +119,32 @@ section {
   transform: scale(1.05);
   /* color: black !important; */
   /* background-color: white !important; */
+}
+.skill-card::before{
+      content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(173, 177, 173);
+    top: 45%;
+    left: 0.5rem;
+    position: absolute;
+
+
+
+}
+.skill-card::after{
+      content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(178, 185, 178);
+    top: 45%;
+    right: 0.5rem;
+    position: absolute;
+
+
+
 }
 
 /* Experience Cards */
@@ -141,6 +174,26 @@ footer {
   color: white;
 }
 
+
+.hero .animationCard{
+     height: 35vh !important;
+
+}
+/* expereince section styles */
+#experience .animationCard{
+  height: 50vh;
+}
+#experience{
+  background-color: #976955;
+  color: rgb(32, 40, 40);
+}
+.experience-details{
+  padding-left: 5rem !important;
+}
+.nav-active{
+    color: blue !important;
+    font-weight: 600;
+}
 @media (max-width: 640px) {
      .side-nav a {
   
@@ -168,6 +221,9 @@ footer {
    border-radius: 10px;
     z-index: 1040;
   }
+.experience-details{
+  padding-left: 1rem !important;
+}
 
 }
 /* Responsive Fixes */
@@ -190,12 +246,4 @@ footer {
   .hero a {
     font-size: 0.9rem;
   }
-}
-.hero .animationCard{
-     height: 35vh !important;
-
-}
-.nav-active{
-    color: blue !important;
-    font-weight: 600;
 }
