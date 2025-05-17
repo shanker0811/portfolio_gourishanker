@@ -98,9 +98,12 @@ function Skills() {
   return (
     <section id="skills" className="container-fluid py-5">
       <h2 className="text-center mb-4">Skills</h2>
-      <div className="row justify-content-center">
+      <div className="row skills-wrapper justify-content-center">
         {skillsArray.map((skill, i) => (
-          <div className="col-md-3 col-6 mb-3 text-center" key={i}>
+          <div
+            className="col-md-3 col-12 mb-3 col-sm-6 col-xl-3 col-lg-3 text-center"
+            key={i}
+          >
             <div className="skill-card">
               <>{skill?.icon}</>
               <h5>{skill?.technology}</h5>

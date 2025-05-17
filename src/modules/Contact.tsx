@@ -5,11 +5,11 @@ function Contact() {
       <p>
         Email:{" "}
         <a href="mailto:gourishanker@example.com" className="text-white">
-          gourishanker@example.com
+          gourishanker697@gmail.com
         </a>
       </p>
       <p>
-        Phone: <strong>96785754987523</strong>
+        Phone: <strong>9177196626</strong>
       </p>
     </section>
   );

@@ -5,7 +5,12 @@ function Navbar() {
     <>
       <ScrollSpy activeClass="nav-active">
         <div className="side-nav d-md-flex  align-items-center">
-          <a href="#skills" title="Skills">
+          <a
+            href="#skills"
+            title="Skills"
+            data-toggle="tooltip"
+            data-placement="right"
+          >
             <i className="fa-solid fa-atom"></i>
           </a>
           <a href="#experience" title="Experience">
@@ -29,7 +34,7 @@ function Navbar() {
         </a>
         <a
           className="btn btn-primary btn-sm d-flex align-items-center"
-          href="mailto:gourishanker697@example.com"
+          href="mailto:gourishanker697@gmail.com"
         >
           <i className="fa-solid fa-envelope mx-2"></i> Email
         </a>
