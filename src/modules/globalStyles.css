@@ -1,0 +1,190 @@
+:root {
+  --dark-blue: #0d1b2a;
+  --blue: #cbd1dd;
+  --light-blue: #415a77;
+  --gray-blue: #778da9;
+  --light: #e0e1dd;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--light);
+  color: var(--light-blue);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Top Controls */
+.top-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  z-index: 1050;
+}
+
+.top-controls a {
+  font-size: 0.875rem;
+}
+
+/* Side Nav */
+.side-nav {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  flex-direction: column;
+  background: var(--blue);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1040;
+}
+
+.side-nav a {
+  display: block;
+  color: white;
+  font-size: 1.3rem;
+  margin: 12px 0;
+  transition: transform 0.2s ease;
+}
+
+.side-nav a:hover {
+  transform: scale(1.2);
+  color: var(--gray-blue);
+}
+
+/* Hero Section */
+.hero {
+  background: var(--dark-blue);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.hero a {
+  animation: fadeInUp 1.4s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+}
+
+/* Skills Cards */
+.skill-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+/* Experience Cards */
+.experience-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects */
+.card .badge {
+  font-size: 0.75rem;
+  margin-top: 8px;
+}
+
+/* Contact */
+.contact {
+  background-color: var(--blue);
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: var(--light-blue);
+  color: white;
+}
+
+@media (max-width: 640px) {
+     .side-nav a {
+  
+  font-size: 1rem !important;
+  margin: 0.1rem 0 !important;
+}
+
+  .side-nav {
+    position: fixed;
+    /* top: 50%; */
+    bottom: 0;
+    /* left: 10px; */
+    flex-direction: row !important;
+    display: flex;
+    left: 0 !important;
+    gap: 1rem;
+    justify-content: space-around;
+    width: 100%;
+    transform: translateY(909%);
+     
+    background: var(--blue);
+    /* padding: 10px; */
+    height: fit-content !important;
+    padding: 0.5rem !important;
+   border-radius: 10px;
+    z-index: 1040;
+  }
+
+}
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .top-controls {
+    flex-direction: column;
+    right: 10px;
+    top: 10px;
+  }
+ 
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero a {
+    font-size: 0.9rem;
+  }
+}
+.hero .animationCard{
+     height: 35vh !important;
+
+}
+.nav-active{
+    color: blue !important;
+    font-weight: 600;
+}

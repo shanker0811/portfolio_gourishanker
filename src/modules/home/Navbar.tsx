@@ -10,8 +10,8 @@ const NavBar = () => {
         <div className="col-12 navbar-wrappper d-flex align-items-center justify-content-space-between">
           <div className="col-6 mx-3">Nara Gouri Shanker</div>
           <div className={"col-6"} id="navbarNavAltMarkup">
-            <ScrollSpy activeClass="nav-active">
-              <div className="navbar-nav d-flex flex-row align-items-center gap-3">
+            <div className="navbar-nav d-flex flex-row align-items-center gap-3">
+              <ScrollSpy activeClass="nav-active">
                 <a
                   className="nav-link active"
                   aria-current="page"
@@ -25,15 +25,11 @@ const NavBar = () => {
                 <a className="nav-link" href="#projects">
                   Projects
                 </a>
-                <a
-                  className="nav-link disabled"
-                  href="#contact"
-                  aria-disabled="true"
-                >
+                <a className="nav-link" href="#contact">
                   Contact
                 </a>
-              </div>
-            </ScrollSpy>
+              </ScrollSpy>
+            </div>
           </div>
         </div>
       </nav>
