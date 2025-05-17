@@ -9,8 +9,8 @@ function Hero() {
         loop={true}
         className="animationCard"
       />
-      <h1>Gouri Shanker</h1>
-      <p>Frontend Developer | 2.5+ Years Experience</p>
+      <h1>Nara Gouri Shanker</h1>
+      <p>Full stack Developer | 2.5+ Years Experience</p>
       <a href="#projects" className="btn btn-light mt-3">
         View Projects
       </a>
