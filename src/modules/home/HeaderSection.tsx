@@ -1,5 +1,4 @@
 import Lottie from "lottie-react";
-import React from "react";
 import animationData from "../../assets/lootiefiles/developeranimaton.json";
 import workingdevanima from "../../assets/lootiefiles/Webdeveloper.json";
 import NavBar from "./Navbar";

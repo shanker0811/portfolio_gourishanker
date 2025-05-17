@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Lottie from "lottie-react";
 import animationData from "../assets/lootiefiles/developeranimaton.json";
 

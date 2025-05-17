@@ -1,4 +1,3 @@
-import React from "react";
 import pdf from "../assets/Gouri_Shanker_Fullstack_Dev.pdf";
 import ScrollSpy from "react-scrollspy-navigation";
 function Navbar() {

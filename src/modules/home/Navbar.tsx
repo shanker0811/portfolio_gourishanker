@@ -1,9 +1,7 @@
-import React, { useState } from "react";
 import "./NavbarStyles.css";
 import ScrollSpy from "react-scrollspy-navigation";
 
 const NavBar = () => {
-  const [openMenu, setOpenMenu] = useState(false);
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">

@@ -1,4 +1,3 @@
-import react from "react";
 // import Lottie from "lottie-react";
 // import HeaderSection from "./modules/home/HeaderSection";
 import "./modules/globalStyles.css";
