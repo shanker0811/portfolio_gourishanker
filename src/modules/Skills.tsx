@@ -106,8 +106,8 @@ function Skills() {
           >
             <div className="skill-card">
               <>{skill?.icon}</>
-              <h5>{skill?.technology}</h5>
-              <p>{skill?.experience}</p>
+              <h5 className="m-0">{skill?.technology}</h5>
+              <p className="m-0">{skill?.experience}</p>
             </div>
           </div>
         ))}

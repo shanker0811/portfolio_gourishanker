@@ -5,6 +5,9 @@ function Navbar() {
     <>
       <ScrollSpy activeClass="nav-active">
         <div className="side-nav d-md-flex  align-items-center">
+          <a href="#intro" title="intro">
+            <i className="fa-solid fa-address-card"></i>
+          </a>
           <a
             href="#skills"
             title="Skills"
