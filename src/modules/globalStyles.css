@@ -168,6 +168,20 @@ section {
   font-size: 0.75rem;
   margin-top: 8px;
 }
+.project-card{
+  padding: 0.5rem;
+}
+#projects{
+  padding-left: var(--padingleft);
+  background: #615b64;
+    color: wheat;
+}
+#projects .card-img-top{
+  height: 200px;
+  width: 100%;
+  object-fit: cover; /* or "contain" depending on preference */
+  border-radius: 0.5rem;
+}
 
 /* Contact */
 .contact {
@@ -205,13 +219,22 @@ footer {
     font-weight: 600;
 }
 @media (max-width: 640px) {
+  .skills-wrapper {
+    display: grid !important;
 
-  .education-details-wrappper{
-  padding-left: 0px !important;
+  }
+  .skill-card{
+    padding: 0.2rem 5rem !important;
+  }
+
+  .education-details-wrappper,#skills,.experience-details,#projects{
+  padding-left: 1rem !important;
 }
 .education-details-wrappper .card-details{
   font-size: 10px !important;
 }
+
+
      .side-nav a {
   
   font-size: 1rem !important;
@@ -238,9 +261,7 @@ footer {
    border-radius: 10px;
     z-index: 1040;
   }
-.experience-details{
-  padding-left: 1rem !important;
-}
+
 
 }
 /* Responsive Fixes */

@@ -17,6 +17,7 @@ import Skills from "./modules/Skills";
 import Experience from "./modules/Experience";
 import Projects from "./modules/Projects";
 import Contact from "./modules/Contact";
+import Footer from "./modules/Footer";
 // import Footer from "./modules/Footer";
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
       <Experience />
       <Projects />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

@@ -31,56 +31,58 @@ const educationArray = [
 
 function Hero() {
   return (
-    <section className="hero text-center py-5 container-fluid">
+    <section className="hero text-center py-5 container-fluid" id="intro">
       {/* Animation */}
-      <Lottie
-        animationData={animationData}
-        loop={true}
-        className="animationCard mb-3"
-      />
+      <div>
+        <Lottie
+          animationData={animationData}
+          loop={true}
+          className="animationCard mb-3"
+        />
 
-      {/* Name & Title */}
-      <h1 className="mb-2">Nara Gouri Shanker</h1>
-      <p className="lead">Full Stack Developer | 2.5+ Years Experience</p>
+        {/* Name & Title */}
+        <h1 className="mb-2">Nara Gouri Shanker</h1>
+        <p className="lead">Full Stack Developer | 2.5+ Years Experience</p>
 
-      {/* Education Cards */}
-      <div className="row education-details-wrappper justify-content-center my-4">
-        {educationArray.map((edu, index) => (
-          <div
-            className="col-sm-12 card-details col-md-6 col-lg-4 mb-4"
-            key={index}
-          >
-            <div className="card h-100 shadow-sm border-0">
-              <div className="card-body">
-                <div className="row align-items-center">
-                  {/* Left image */}
-                  <div className="col-4 text-center">
-                    <img
-                      src={edu.image}
-                      alt={edu.level}
-                      className="img-fluid rounded-circle"
-                      style={{ width: "80px", height: "80px" }}
-                    />
-                  </div>
+        {/* Education Cards */}
+        <div className="row education-details-wrappper justify-content-center my-4">
+          {educationArray.map((edu, index) => (
+            <div
+              className="col-sm-12 card-details col-md-6 col-lg-4 mb-4"
+              key={index}
+            >
+              <div className="card h-100 shadow-sm border-0">
+                <div className="card-body">
+                  <div className="row align-items-center">
+                    {/* Left image */}
+                    <div className="col-4 text-center">
+                      <img
+                        src={edu.image}
+                        alt={edu.level}
+                        className="img-fluid rounded-circle"
+                        style={{ width: "80px", height: "80px" }}
+                      />
+                    </div>
 
-                  {/* Right text */}
-                  <div className="col-8 text-start">
-                    <h6 className="mb-1">{edu.level}</h6>
-                    <p className="mb-1 small">{edu.institute}</p>
-                    <p className="mb-1 small">{edu.duration}</p>
-                    <p className="mb-0 small">{edu.percentage}</p>
+                    {/* Right text */}
+                    <div className="col-8 text-start">
+                      <h6 className="mb-1">{edu.level}</h6>
+                      <p className="mb-1 small">{edu.institute}</p>
+                      <p className="mb-1 small">{edu.duration}</p>
+                      <p className="mb-0 small">{edu.percentage}</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      {/* View Projects Button */}
-      <a href="#projects" className="btn btn-light mt-3">
-        View Projects
-      </a>
+        {/* View Projects Button */}
+        <a href="#projects" className="btn btn-light mt-3">
+          View Projects
+        </a>
+      </div>
     </section>
   );
 }
