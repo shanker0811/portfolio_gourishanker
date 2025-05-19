@@ -2,7 +2,7 @@ function Skills() {
   let skillsArray = [
     {
       technology: "Javascript",
-      experience: "3yrs",
+      experience: "2.5yrs",
       icon: (
         <i
           className="fa-brands fa-js"
@@ -22,7 +22,7 @@ function Skills() {
     },
     {
       technology: "HTML",
-      experience: "3yrs",
+      experience: "2.5yrs",
       icon: (
         <i
           className="fa-brands fa-html5"
@@ -32,7 +32,7 @@ function Skills() {
     },
     {
       technology: "CSS",
-      experience: "3yrs",
+      experience: "2.5yrs",
       icon: (
         <i
           className="fa-brands fa-css3-alt"
@@ -43,7 +43,7 @@ function Skills() {
 
     {
       technology: "jQuery",
-      experience: "2yrs",
+      experience: "2.5yrs",
       icon: (
         <i
           className="fa-solid fa-code"
@@ -53,7 +53,7 @@ function Skills() {
     },
     {
       technology: "TypeScript",
-      experience: "3yrs",
+      experience: "2.5yrs",
       icon: (
         <i
           className="fa-solid fa-code"
