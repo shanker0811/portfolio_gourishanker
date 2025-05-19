@@ -11,12 +11,14 @@ const educationArray = [
     institute: "Andhra University College Of Engineering",
     duration: "Jun-2017 to Apr-2021",
     percentage: "6.9 CGPA",
+    stream: "Civil Engineering",
     image: graduationimge,
   },
   {
     level: "Intermediate",
     institute: "St Mary's Junior College",
     duration: "Jun-2015 to Apr-2017",
+    stream: "MPC",
     percentage: "82%",
     image: intermediateImg,
   },
@@ -42,7 +44,7 @@ function Hero() {
 
         {/* Name & Title */}
         <h1 className="mb-2">Nara Gouri Shanker</h1>
-        <p className="lead">Full Stack Developer | 2.5+ Years Experience</p>
+        <p className="lead">Full Stack Developer | 3 Years Experience</p>
 
         {/* Education Cards */}
         <div className="row education-details-wrappper justify-content-center my-4">
@@ -67,7 +69,9 @@ function Hero() {
                     {/* Right text */}
                     <div className="col-8 text-start">
                       <h6 className="mb-1">{edu.level}</h6>
-                      <p className="mb-1 small">{edu.institute}</p>
+                      <p className="mb-1 small">
+                        {edu.institute} {edu?.stream && `(${edu?.stream})`}
+                      </p>
                       <p className="mb-1 small">{edu.duration}</p>
                       <p className="mb-0 small">{edu.percentage}</p>
                     </div>

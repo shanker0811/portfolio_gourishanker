@@ -4,6 +4,8 @@
   --light-blue: #415a77;
   --gray-blue: #778da9;
   --light: #e0e1dd;
+  --navBarbackground:#7f858f;
+  --contactbackground:#969a74;
   --padingleft:3.5rem
 }
 .row{
@@ -42,7 +44,7 @@ body {
   left: 10px;
   transform: translateY(-50%);
   flex-direction: column;
-  background: var(--blue);
+  background: var(--navBarbackground);
   padding: 10px;
   border-radius: 10px;
   z-index: 1040;
@@ -185,7 +187,7 @@ section {
 
 /* Contact */
 .contact {
-  background-color: var(--blue);
+  background-color: var(--contactbackground);
   color: rgb(18, 17, 17);
 }
 .contact p a{
@@ -254,7 +256,6 @@ footer {
     width: 100%;
     transform: translateY(0%) !important;
      
-    background: var(--blue);
     /* padding: 10px; */
     height: fit-content !important;
     padding: 0.5rem !important;

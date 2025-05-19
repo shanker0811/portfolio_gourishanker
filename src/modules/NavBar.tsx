@@ -42,9 +42,18 @@ function Navbar() {
           <i className="fa-solid fa-envelope mx-2"></i> Email
         </a>
         <a
+          className="btn btn-primary btn-sm d-flex align-items-center"
+          href={"https://github.com/shanker0811"}
+          target="_blank"
+        >
+          <i className="fa-brands fa-github mx-2"> </i>Git Hub
+        </a>
+
+        <a
           className="btn btn-secondary btn-sm d-flex align-items-center"
           href={pdf}
           download
+          target="_blank"
         >
           <i className="fa-solid fa-download mx-2"></i> Resume
         </a>
