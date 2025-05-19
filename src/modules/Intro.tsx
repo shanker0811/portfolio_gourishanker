@@ -24,7 +24,7 @@ const educationArray = [
   },
   {
     level: "SSC",
-    institute: "Sree Sremanarayan High School",
+    institute: "Sree Sree Sremanarayan High School",
     duration: "Apr-2014 to Apr-2015",
     percentage: "8.5 CGPA",
     image: sscImage,
@@ -44,7 +44,7 @@ function Hero() {
 
         {/* Name & Title */}
         <h1 className="mb-2">Nara Gouri Shanker</h1>
-        <p className="lead">Full Stack Developer | 3 Years Experience</p>
+        <p className="lead">Full Stack Developer | 2.5 Years Experience</p>
 
         {/* Education Cards */}
         <div className="row education-details-wrappper justify-content-center my-4">
