@@ -24,7 +24,7 @@ const educationArray = [
   },
   {
     level: "SSC",
-    institute: "Sree Sremanarayan High School",
+    institute: "Sree Sree Sremanarayan High School",
     duration: "Apr-2014 to Apr-2015",
     percentage: "8.5 CGPA",
     image: sscImage,
